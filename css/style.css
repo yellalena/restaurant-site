@@ -73,6 +73,7 @@ body {
 
 #phone a {/* Phone number */
 	text-align: right;
+	padding-bottom: 0;
 }
 
 #phone a:hover {
@@ -103,7 +104,13 @@ body {
 
 /********** Large Devices only **********/
 @media (min-width: 1200px) {
-
+	.container .jumbotron {
+		background: url("../img/jumbotron-lg.jpg") no-repeat;
+		height: 688px;
+		box-shadow: 0 0 20px white;
+		border: 2px solid white;
+		margin-top: 20px;
+	}
 }
 
 /********** Medium Devices only **********/
@@ -116,12 +123,31 @@ body {
 		margin: 20px 5px 5px 0;
 	}
 	/* End of Header */
+	.container .jumbotron  {
+		background: url("../img/jumbotron-md.jpg") no-repeat;
+		height: 533px;
+		box-shadow: 0 0 20px white;
+		border: 2px solid white;
+		margin-top: 20px;
+	}
 
 }
 
 /********** Small Devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+	.nav.navbar-nav.mr-auto {
+		clear: right;
+	}
 
+	.container .jumbotron  {
+		background: url("../img/jumbotron-sm.jpg") no-repeat;
+		height: 413px;
+		box-shadow: 0 0 20px white;
+		border: 2px solid white;
+		margin-top: 20px;
+	}
+
+	
 }
 
 /********** Extra Small Devices only **********/
@@ -154,4 +180,11 @@ body {
 		font-size: 1.2em;
 		margin-right: 5px;
 	 }
+
+	.container .jumbotron {
+		box-shadow: 0 0 20px white;
+		border: 2px solid white;
+		margin-top: 25px;
+		padding: 0;
+	}
 }
