@@ -11,6 +11,9 @@ body {
 	border-radius: 0;
 	border: 0;
 }
+#header-nav>.container {
+	flex-wrap: wrap;
+}
 
 #logo-img {
 	background: url('../img/logo.png') no-repeat;
@@ -141,6 +144,10 @@ body {
 		background: url("../img/jumbotron-sm.jpg") no-repeat;
 		height: 413px;
 	}
+
+	.navbar-brand p { /* Kosher cert */
+		margin-bottom: 0;
+	 }
 
 	
 }
