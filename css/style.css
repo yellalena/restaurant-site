@@ -52,6 +52,7 @@ body {
 
  #nav-list {
  	margin-top: 0px;
+ 	margin-right: 10px;
  }
 
  #nav-list a {
@@ -102,14 +103,18 @@ body {
 
 /* END OF HEADER */
 
+/** HOME **/
+.container .jumbotron {
+	box-shadow: 0 0 20px white;
+	border: 2px solid white;
+	margin-top: 20px;
+}
+
 /********** Large Devices only **********/
 @media (min-width: 1200px) {
 	.container .jumbotron {
 		background: url("../img/jumbotron-lg.jpg") no-repeat;
 		height: 688px;
-		box-shadow: 0 0 20px white;
-		border: 2px solid white;
-		margin-top: 20px;
 	}
 }
 
@@ -126,25 +131,15 @@ body {
 	.container .jumbotron  {
 		background: url("../img/jumbotron-md.jpg") no-repeat;
 		height: 533px;
-		box-shadow: 0 0 20px white;
-		border: 2px solid white;
-		margin-top: 20px;
 	}
 
 }
 
 /********** Small Devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-	.nav.navbar-nav.mr-auto {
-		clear: right;
-	}
-
 	.container .jumbotron  {
 		background: url("../img/jumbotron-sm.jpg") no-repeat;
 		height: 413px;
-		box-shadow: 0 0 20px white;
-		border: 2px solid white;
-		margin-top: 20px;
 	}
 
 	
@@ -182,9 +177,6 @@ body {
 	 }
 
 	.container .jumbotron {
-		box-shadow: 0 0 20px white;
-		border: 2px solid white;
-		margin-top: 25px;
 		padding: 0;
 	}
 }
