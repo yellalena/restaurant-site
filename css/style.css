@@ -149,6 +149,9 @@ body {
 		margin-bottom: 0;
 	 }
 
+	#collapsable-nav {
+		font-size: 0.9em;
+	 }
 	
 }
 
