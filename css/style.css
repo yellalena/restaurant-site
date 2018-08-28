@@ -113,6 +113,42 @@ body {
 	margin-top: 20px;
 }
 
+#menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid white;
+	overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 15px 1px white;
+}
+
+#menu-tile {
+	background: url('../img/menu-tile.jpg') no-repeat;
+	background-position: center;
+}
+
+#specials-tile {
+	background: url('../img/specials-tile.jpg') no-repeat;
+	background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .7;
+}
+
 /********** Large Devices only **********/
 @media (min-width: 1200px) {
 	.container .jumbotron {
@@ -159,6 +195,7 @@ body {
 @media (max-width: 767px) {
 	.navbar-brand {
 		padding-top: 10px;
+		padding-bottom: 0;
 		height: 80px;
 	}
 
@@ -170,6 +207,7 @@ body {
 	.navbar-brand p { /* Kosher cert */
 		font-size: .6em;
 		margin-top: 12px;
+		margin-bottom: 0;
 	 }
 
 	.navbar-brand p img { /* Star-K */
@@ -189,4 +227,9 @@ body {
 	.container .jumbotron {
 		padding: 0;
 	}
+}
+
+/********** Super Extra Small Devices only **********/
+@media (max-width: 479px) {
+
 }
