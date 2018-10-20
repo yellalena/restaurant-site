@@ -189,6 +189,7 @@ body {
 	position: relative;
 	border: 2px solid white;
 	overflow: hidden;
+	text-align: center;
 	max-width: 320px;
 	height: 200px;
 	margin: 0 auto 15px;
